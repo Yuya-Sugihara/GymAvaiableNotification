@@ -1,0 +1,18 @@
+{
+    "_day": null,
+    "_facilities": [
+        "NorthSportsCenter",
+        "MiyakojimaSportsCenter",
+        "FukushimaSportsCenter",
+        "KonohanaSportsCenter",
+        "MinatoSportsCenter",
+        "TaishoSportsCenter",
+        "AbenoSportsCenter"
+    ],
+    "_isHeadless": true,
+    "_majorClassification": "Basketball",
+    "_minorClassification": 0,
+    "_month": null,
+    "_weekCount": 8,
+    "_year": null
+}
