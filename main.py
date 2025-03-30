@@ -25,6 +25,18 @@ def main(argc, argv):
                 summary += '\n'
                 exists = True
 
+       # ひとつ前の解析結果との比較
+        with open('postedMessage.txt') as f:
+            s = f.read()
+            if s == summary:
+                 # 一個前と同じメッセージを送ることになった場合は送らない
+                print('ひとつ前の解析結果と同じだったので、送信処理をスキップします')
+                exists = False
+        
+            # 一個前のメッセージとして保存
+            f.write(summary)
+
+
         # 空いている情報があるなら送る
         if exists == True:
             summary += 'こちらのURLで予約可能です。' + '\n'
